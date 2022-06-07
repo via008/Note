@@ -51,8 +51,77 @@ const output2 = [
   { id: 1, parentId: 0 },
   { id: 6, parentId: 10 },
 ];
-
- */
-function solution(treeList) {
-  
+*/
+// 递归
+function recursive(list, result) {
+  list.forEach((item) => {
+    const obj = {};
+    if (item.children) {
+      obj.id = item.id;
+      result.push(obj);
+      recursive(item.children, result);
+    } else {
+      result.push(item);
+    }
+  })
 }
+function solution(treeList) {
+  const result = [];
+  recursive(treeList, result);
+  return result;
+}
+
+// 广度优先、循环遍历
+function solution(treeList) {
+  const result = [];
+  const queue = treeList;
+
+  while(queue.length) {
+    const item = queue.shift();
+    const { children = [], ...rest } = item;
+    result.push(rest);
+
+    children.forEach((child) => {
+      queue.push(child);
+    })
+  }
+
+  return result;
+}
+
+console.log(solution([
+  {
+    id: 0,
+    children: [
+      {
+        id: 1,
+        parentId: 0,
+      },
+      {
+        id: 2,
+        parentId: 0,
+      },
+    ],
+  },
+]))
+
+console.log(solution([
+  {
+    id: 0,
+    children: [
+      {
+        id: 1,
+        parentId: 0,
+      },
+    ],
+  },
+  {
+    id: 10,
+    children: [
+      {
+        id: 6,
+        parentId: 10,
+      },
+    ],
+  },
+]))
