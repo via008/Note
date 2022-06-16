@@ -52,6 +52,11 @@ function solution(str1, str2) {
   return true;
 }
 
+/**
+ * 时间复杂度：O(n)
+ * 空间复杂度：O(1)
+ */
+
 console.log(solution('举头望明月', '低头思故乡'));
 console.log(solution('山外有山', '人外有人'));
 console.log(solution('paper', 'title'));

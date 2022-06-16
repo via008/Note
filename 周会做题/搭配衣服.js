@@ -33,6 +33,10 @@ function solution(arr1, arr2) {
   }
   return result;
 }
+/**
+ * 时间复杂度：O(n^2)
+ * 空间复杂度：O(1)
+ */
 
 function solution1(arr1, arr2) {
   arr1.sort((a, b) => a - b);
@@ -54,6 +58,11 @@ function solution1(arr1, arr2) {
 
   return result;
 }
+
+/**
+ * 时间复杂度：O(3n)
+ * 空间复杂度：O(1)
+ */
 
 console.log(solution([175, 160, 165, 160], [170, 160, 160, 165]));
 console.log(solution([4, 9, 7], [9, 4, 9, 8, 4]));

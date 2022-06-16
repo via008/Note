@@ -21,4 +21,9 @@ function solution(arr) {
   });
   return arr.filter((item) => item.parentId === undefined);
 }
+/**
+ * 时间复杂度：O(2n^2)
+ * 空间复杂度：O(n)
+ */
+
 console.log(solution(test));

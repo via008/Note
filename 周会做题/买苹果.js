@@ -34,4 +34,9 @@
   return map.find(item => item);
 }
 
+/**
+ * 时间复杂度：O(n^2)
+ * 空间复杂度：O(n^2)
+ */
+
 console.log(solution([4, 9, 5, 2], 5));

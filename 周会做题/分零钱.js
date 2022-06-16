@@ -44,6 +44,11 @@ function solution(nums) {
   return [result1, result2];
 }
 
+/**
+ * 时间复杂度：O(2n)
+ * 空间复杂度：O(1)
+ */
+
 console.log(solution([2,6,100, 8]));
 console.log(solution([1,7,3,5]));
 console.log(solution([1,5,4]));

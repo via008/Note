@@ -39,6 +39,10 @@ function solution(arr1, arr2) {
   }
   return result;
 }
+/**
+ * 时间复杂度：O(n)
+ * 空间复杂度：O(1)
+ */
 
 console.log(solution([1,2,5], [3,4]))
 console.log(solution([1,3,5], [2,4,6,8]))

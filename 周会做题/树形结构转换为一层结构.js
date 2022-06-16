@@ -71,6 +71,11 @@ function solution(treeList) {
   return result;
 }
 
+/**
+ * 时间复杂度：O(n^2)
+ * 空间复杂度：O(n * n) = O(n^2)
+ */
+
 // 广度优先、循环遍历
 function solution(treeList) {
   const result = [];
@@ -88,6 +93,11 @@ function solution(treeList) {
 
   return result;
 }
+
+/**
+ * 时间复杂度：O(n^2)
+ * 空间复杂度：O(n)
+ */
 
 console.log(solution([
   {

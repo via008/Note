@@ -32,6 +32,11 @@
   return result;
 }
 
+/**
+ * 时间复杂度：O(n)
+ * 空间复杂度：O(1)
+ */
+
 console.log(solution('abc', 'def'));
 console.log(solution('https', 'css'));
 console.log(solution('13' , '246'));
