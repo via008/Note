@@ -18,12 +18,12 @@ function solution(arr1, arr2) {
   let j = 0;
 
   while(i < arr1.length || j < arr2.length) {
-    if (!arr1[i]) {
+    if (!arr1[i] && arr1[i] !== 0) {
       result.push(arr2[j]);
       j ++;
       continue;
     }
-    if (!arr2[j]) {
+    if (!arr2[j] && arr2[i] !== 0) {
       result.push(arr1[i]);
       i ++;
       continue;
