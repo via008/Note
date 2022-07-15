@@ -52,7 +52,9 @@ function solution1(arr1, arr2) {
     } else if(arr1[i] > arr2[j]) {
       j ++;
     } else {
-      result.push()
+      result.push(arr1[i]);
+      i ++;
+      j ++;
     }
   }
 
