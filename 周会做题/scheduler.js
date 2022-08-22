@@ -11,39 +11,42 @@
  * 1200ms 时，4 完成，输出 4
  */
  class Scheduler {
-    constructor() {
-      this.list = [];
-      this.temp = [];
-    }
-
-    add(fun) {
-      this.list.push(fun);
-
-      if(this.list.length > 2) {
-        this.temp.push(this.list.shift(), this.list.shift());
-        this.temp.map((f) => {
-          f().then(() => {
-            this.temp.push(this.list.shift());
-          })
-        })
+  constructor() {
+    this.promiseQueue = [];
+    // 当前正在跑的有几个
+    this.runningTaskCount = 0;
+  }
+  add(promiseCreator) {
+    return new Promise((res) => {
+      this.promiseQueue.push([promiseCreator, res]);
+      if (this.runningTaskCount < 2) {
+        this.executeTask();
       }
-    }
+    });
+  }
+  executeTask() {
+    if (!this.promiseQueue.length) return;
+    let [curPromiseCreator, curReslove] = this.promiseQueue.shift();
+    this.runningTaskCount++;
+    curPromiseCreator().then(() => {
+      curReslove();
+      this.runningTaskCount--;
+      this.executeTask();
+    });
+  }
+}
 
-    
- }
- 
- const timeout = (time) =>
-   new Promise((resolve) => {
-     setTimeout(resolve, time);
-   });
- const scheduler = new Scheduler();
- 
- const addTask = (time, order) => {
-   scheduler.add(() => timeout(time)).then(() => console.log(order));
- };
+const timeout = (time) =>
+  new Promise((resolve) => {
+    setTimeout(resolve, time);
+  });
+const scheduler = new Scheduler();
 
- addTask(1000, '1');
- addTask(500, '2');
- addTask(300, '3');
- addTask(400, '4');
- 
+const addTask = (time, order) => {
+  scheduler.add(() => timeout(time)).then(() => console.log(order));
+};
+
+addTask(1000, '1');
+addTask(500, '2');
+addTask(300, '3');
+addTask(400, '4');
