@@ -29,10 +29,9 @@
     }
   }
   result.sort((a, b) => b.length - a.length);
+  console.log(result)
 
   return result[0].length;
 }
 
 console.log(solution('abacd'));
-console.log(solution('aaba'));
-console.log(solution('abbcdb'));
