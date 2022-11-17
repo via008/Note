@@ -17,9 +17,7 @@ var multiply = function(num1, num2) {
       add.push(temp % 10);
     }
 
-    const tempAdd = add.reverse().join('') + decade;
-    console.log('=====result', result)
-    console.log('=====tempAdd', tempAdd)
+    const tempAdd = add.reverse().join('') - '0' + decade;
 
     let car = 0, arr = [], m = result.length - 1, n = tempAdd.length - 1;
     while(m >= 0 || n >= 0) {
