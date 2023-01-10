@@ -186,3 +186,46 @@ const deleteNode = (root, node) => {
   node.left.parent = successorNode;
  }
 }
+
+// ----- 中序遍历 ------
+// 二叉搜索树「中序遍历」是按照键「增加」的顺序进行的
+const inorderTree = (root) => {
+  const result = [];
+  const innerFun = (r) => {
+    if (r !== null) {
+      innerFun(r.left);
+      result.push(r);
+      innerFun(r.right);
+    }
+  }
+  innerFun(root);
+  return result;
+}
+
+// ----- 前序遍历 ------
+const preorderTree = (root) => {
+  const result = [];
+  const innerFun = (r) => {
+    if (r !== null) {
+      result.push(r);
+      innerFun(r.left);
+      innerFun(r.right);
+    }
+  }
+  innerFun(root);
+  return result;
+}
+
+// ----- 后序遍历 ------
+const postorderTree = (root) => {
+  const result = [];
+  const innerFun = (r) => {
+    if (r !== null) {
+      innerFun(r.left);
+      innerFun(r.right);
+      result.push(r);
+    }
+  }
+  innerFun(root);
+  return result;
+}
