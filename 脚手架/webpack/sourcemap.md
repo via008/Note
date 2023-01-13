@@ -119,3 +119,5 @@ devtool: 'eval-source-map'
 理解了这些基础配置项，根据 `^(inline-|hidden-|eval-)?(nosources-)?(cheap-(module-)?)?source-map$` 的规律来进行组合，就可以实现各种需求下的 `sourcemap` 配置。
 
 当然，这种 `sourcemap` 配置还不够细致，比如 `sourcemap` 的 `url` 怎么生成，文件名是什么。如果想对这些做配置，可以关掉 `devtool`，启用 `SourceMapDevToolPlugin` 来配置。
+
+参考：[彻底搞懂 Webpack 的 sourcemap 配置原理](https://zhuanlan.zhihu.com/p/558069023?utm_id=0)
