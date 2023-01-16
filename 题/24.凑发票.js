@@ -34,7 +34,7 @@
  */
 function solution(bills, amount) {
   /**
-   * 1. 状态转移方程：f(n) = min(f(n - bills[i]) + 1)（最优子结构）
+   * 1. 状态转移方程：f(n) = min(f(n - bills[i]) + 1, i + 1)（最优子结构）
    * 2. 备忘录存下已经计算过的子问题（重叠子问题）
    */
   const cache = [];
@@ -52,8 +52,6 @@ function solution(bills, amount) {
     for(let i = start; i < bills.length; i ++) {
       if (m >= bills[i]) {
         min = Math.min(fun(m - bills[i], i + 1) + 1, min);
-      } else {
-        continue;
       }
     }
     return cache[m] = min;
