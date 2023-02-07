@@ -3,44 +3,40 @@
  * @param {string} num2
  * @return {string}
  */
-var multiply = function(num1, num2) {
+// TODO:不能直接转为数字的相乘，会有溢出的情况
+function multiply(num1, num2) {
   if (num1 === '0' || num2 === '0') {
     return '0';
   }
-
-  let decade = '', result = '';
-  for(let i = num2.length - 1; i >= 0; i --) {
-    let carry = 0, add = [];
+  // 保存当前位（个位 1，十位 10，百位 100...）
+  let curCarry = 1;
+  let result = 0;
+  // 遍历 num2 的每一位与 num1 相乘
+  for(let i = num2.length - 1; i >= 0; i--) {
+    // 保存相乘的结果
+    let temp = 0;
+    // 当前位（个位 1，十位 10，百位 100...）
+    let curCarryTemp = 1;
+    // 保存相乘的进位
+    let carryTemp = 0;
     for(let j = num1.length - 1; j >= 0; j --) {
-      const temp = num1[j] * num2[i] + carry;
-      carry = Math.floor(temp / 10);
-      add.push(temp % 10);
+      let innerMul = num1[j] * num2[i] + carryTemp;
+      carryTemp = Math.floor(innerMul / 10);
+      temp += (innerMul % 10) * curCarryTemp;
+      curCarryTemp *= 10;
     }
 
-    const tempAdd = add.reverse().join('') - '0' + decade;
-
-    let car = 0, arr = [], m = result.length - 1, n = tempAdd.length - 1;
-    while(m >= 0 || n >= 0) {
-      if (m < 0) {
-        arr.push(tempAdd[n]);
-        n --;
-      }
-      if (n < 0) {
-        arr.push(result[m]);
-        m --;
-      }
-      const temp = (result[m] - '0') + (tempAdd[n] - '0') + car;
-
-      car = Math.floor(temp / 10);
-      arr.push(temp % 10);
-      m --;
-      n --;
+    // 结束之后如果还有进位，则加上
+    if (carryTemp !== 0) {
+      temp += carryTemp * curCarryTemp;
     }
-    result = arr.reverse().join('');
-    decade += '0';
+
+    result += temp * curCarry;
+    curCarry *= 10;
   }
 
-  return result;
-};
+  return result.toString();
+}
 
-console.log(multiply('123', '456'));
+console.log(123456789*987654321);
+console.log(multiply('123456789', '987654321'));
