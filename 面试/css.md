@@ -6,7 +6,7 @@
 
 ### 3. 深入：`flex: 1`
 
-`flex` 为 `flex-grow`、`flex-shrink`、`flex-basis` 三者的缩小，默认值为 `flex: 0 1 auto`; 当 `flex` 取值有以下情况：
+`flex` 为 `flex-grow`、`flex-shrink`、`flex-basis` 三者的缩写，默认值为 `flex: 0 1 auto`; 当 `flex` 取值有以下情况：
 
 - `flex` 为一个非负的整数时，表示设置的 `flex-grow` 的值，其余俩值为默认值
 - `flex` 为俩非负的整数时，表示设置的 `flex-grow`，`flex-shrink` 的值，其余值为默认值

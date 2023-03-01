@@ -19,3 +19,23 @@
 
 - `shift`
 - `push`
+
+```javascript
+const bfs = (root) => {
+  // 定义队列
+  const queue = [root];
+  // 定义结果集
+  const res = [];
+  while (queue.length) {
+    const node = queue.shift();
+    res.push(node.val);
+    if (node.left) {
+      queue.push(node.left);
+    }
+    if (node.right) {
+      queue.push(node.right);
+    }
+  }
+  return res;
+};
+```
