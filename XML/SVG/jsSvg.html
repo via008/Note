@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG - 动画</title>
+</head>
+<body>
+  <svg width="750" height="500" fill="orange">
+    <path id="svgPath" />
+  </svg>
+  <script>
+    const svgPath = document.getElementById('svgPath')
+    let x=250, x1=250, y=100
+    setInterval(()=>{
+      if(x<350) {
+        x+=0.1
+      } else {
+        x1=300
+        if(y<200) y+=0.1
+      }
+      svgPath.setAttribute('d', `M 250 100 300 0 ${x} 100 ${x1} ${y} z`)
+    }, 0)
+  </script>
+</body>
+</html>

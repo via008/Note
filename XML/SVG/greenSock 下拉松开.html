@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG - 动画</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+</head>
+<body>
+  <div id="svg-wrapper">
+    <svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+      <rect id="rect" x="200" y="500" width="50" height="50" fill="orange"></rect>
+    </svg>
+  </div>
+  <script>
+    gsap.to('#rect', {
+      y: -400, // transform: translateY(-400px)
+      duration: 5, // 动画执行时间2S
+      ease: "elastic.out(1, 0.3)", // 动画轨迹
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG - path</title>
+  <link rel="stylesheet" href="./common.css" />
+</head>
+<body>
+  <div class="grid">
+    <svg width="750" height="500">
+      <!-- 从起始点（50， 20）画一条到（250， 20）的直线 -->
+      <path d="M50 20 L250 20" style="stroke: #000000;"/>
+      <!-- 从起始点（50， 40）画一条到（250， 40）又到（250，100）的折线 -->
+      <!-- 多个L命令连续可以省略后面的L命令 -->
+      <path d="M50 40 L250 40 250 100 " fill="none" style="stroke: #ff0000;"/>
+
+      <!-- 从起始点（50， 120）画一条X轴为250的水平直线 -->
+      <path d="M50 120 H250" style="stroke: #000000;"/>
+
+      <!-- 从起始点（50， 20）画一条Y轴为250的垂直直线 -->
+      <path d="M30 20 V250" style="stroke: #000000;"/>
+
+      <path d="M350 20 H300 V200 Z" fill="none" style="stroke: #000000;"/>
+    </svg>
+  </div>
+</body>
+</html>

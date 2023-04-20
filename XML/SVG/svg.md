@@ -1,3 +1,5 @@
+# 一、基础概念
+
 可缩放矢量图形（Scalable Vector Graphics，SVG）基于 XML 标记语言，用于描述二维的矢量图形。
 
 ### XML
