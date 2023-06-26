@@ -229,3 +229,56 @@ const postorderTree = (root) => {
   innerFun(root);
   return result;
 }
+
+
+// 二叉搜索树删除特定节点
+function removeNode(root, num) {
+  if (root === null) {
+    return;
+  }
+  // 找到需要删除的节点
+  let cur = root;
+  let pre = null;
+  while(cur) {
+    if (cur.val === num) {
+      break;
+    }
+    pre = cur;
+    if (cur.val > num) {
+      cur = cur.left;
+    } else {
+      cur = cur.right;
+    }
+  }
+
+  // 判断需要删除的节点是否存在、是否为叶子节点、有几个子节点
+  // 如果没有找到值为 num 的节点
+  if (!cur) {
+    return root;
+  }
+  // 无子节点或者有一个子节点
+  if (!cur.left || !cur.right) {
+    const node = cur.left || cur.right;
+    if (cur === root) {
+      root = node;
+    } else {
+      if (pre.left === cur) {
+        pre.left = node;
+      } else {
+        pre.right = node;
+      }
+    }
+    
+  } else {
+    // 有两个子节点
+    let temp = cur.right;
+    // 找到后驱节点
+    while(temp.left) {
+      temp = temp.left;
+    }
+    // 递归删除后驱节点
+    removeNode(temp.val);
+    // 让要删除的节点等于后驱节点
+    cur.val = temp.val;
+  }
+}
