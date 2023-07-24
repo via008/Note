@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      function handleClick(e) {
+        console.log(e)
+      }
+      var mockData = [
+        {
+          province: {
+            label: '北京北京',
+            id: 'beijing',
+          },
+          isChecked: true,
+          type: [
+            { label: '全渠道', id: 'all' },
+            { label: '第三方', id: 'other', isChecked: true },
+          ],
+        },
+        {
+          province: {
+            label: '河北',
+            id: 'hebei',
+          },
+          isChecked: false,
+          type: [
+            { label: '全渠道', id: 'all' },
+            { label: '第三方', id: 'other' },
+          ],
+        },
+        {
+          province: {
+            label: '四川',
+            id: 'sicuan',
+          },
+          type: [
+            { label: '全渠道', id: 'all' },
+            { label: '第三方', id: 'other' },
+          ],
+        },
+      ];
+      var dom = '';
+      mockData.forEach(function (item) {
+        dom +=
+          '<form id="formId"><div style="min-width: 200px">' +
+          '<input type="checkbox" ' + (item.isChecked ? 'checked' : '') + ' id=' + item.province.id + ' name= ' + item.province.id + ' value=' + item.province.id + ' />' +
+          '<label for=' + item.province.id + '>' +
+          item.province.label +
+          '</label>' +
+          '<select name=' + item.province.id + '-type id="type-select">';
+
+        item.type.forEach(function (option) {
+          dom += '<option ' + (option.isChecked ? 'selected' : '') + ' value=' + option.id + '>' + option.label + '</option>';
+        });
+
+        dom += '</select></div>';
+      });
+
+      dom += '<div><button type="submit">提交表单</button></div></form>'
+      document.getElementById('root').innerHTML = dom;
+
+      // 接口
+      window.addEventListener("load", function () {
+        function sendData() {
+          var XHR = new XMLHttpRequest();
+          // FormData 和表单元素绑定在一起
+          var FD  = new FormData(form);
+          const params = [];
+          let obj = {};
+          for(let item of FD) {
+            const key = item[0];
+            const value = item[1];
+            const index = key.indexOf('-type');
+            // 如果不包含 -type，表示选中的是一个省份
+            if (index === -1) {
+              obj.province = key;
+              // 如果包含 -type，则要看对应的省份是否已经包含在 obj 中
+            } else if (obj.province === key.slice(0, index)) {
+              obj.channel = value;
+              params.push(obj);
+              obj = {};
+            }
+          }
+          XHR.open("POST", "https://接口");
+          // 发送的数据是由用户在表单中提供的
+          XHR.send(JSON.stringify(params));
+        }
+
+        // 获取表单元素
+        var form = document.getElementById("formId");
+        // 接管表单的提交事件
+        form.addEventListener("submit", function (event) {
+          event.preventDefault();
+          sendData();
+        });
+      });
+
+    </script>
+  </body>
+</html>

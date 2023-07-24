@@ -55,6 +55,8 @@ class GraphAdjMat {
   }
 }
 
+// export default GraphAdjMat;
+
 const edges = [[0, 1], [0, 3], [1, 2], [2, 3], [2, 4], [3, 4]];
 const test1 = new GraphAdjMat(edges);
 test1.addEdge(0, 2);
@@ -62,3 +64,24 @@ test1.removeEdge(0, 1);
 test1.addVertex(6);
 test1.removeVertex(1);
 console.log(test1)
+
+function graphBFS(graph, vertex) {
+  const res = [];
+  const visited = new Set();
+  visited.add(vertex);
+  const queue = [vertex];
+  while(queue.length) {
+    const v = queue.shift();
+    res.push(v);
+    for(const item of graph.adjMat.get(v)) {
+      if (visited.has(item)) {
+        continue;
+      }
+      visited.add(item);
+      queue.push(item);
+    }
+  }
+  return res;
+}
+
+console.log(graphBFS(test1, 0));
