@@ -201,3 +201,9 @@ var flat = function (arr, n) {
 
 const arr1 = [1, 2, 3, [4, 5, 6], [7, 8, [9, 10, 11, [0, 0, 0]], 12], [13, 14, 15]];
 console.log(flat(arr1, 2))
+
+
+function reverseStr(s) {
+  return s.split(' ').reverse().filter(item => item !== '').join(' ');
+}
+console.log(reverseStr('  Scalable Vector Graphics'))
