@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:activiti="http://activiti.org/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath" targetNamespace="http://www.activiti.org/processdef">
+    <process id="new_zz_dev" name="new_zz_dev" isExecutable="true">
+        <extensionElements>
+            <modeler:allow_reminder xmlns:modeler="http://activiti.com/modeler"><![CDATA[true]]></modeler:allow_reminder>
+            <modeler:allow_delete xmlns:modeler="http://activiti.com/modeler"><![CDATA[true]]></modeler:allow_delete>
+            <modeler:allow_desktop_display xmlns:modeler="http://activiti.com/modeler"><![CDATA[false]]></modeler:allow_desktop_display>
+            <modeler:transfer_not_display xmlns:modeler="http://activiti.com/modeler"><![CDATA[false]]></modeler:transfer_not_display>
+            <modeler:multilingual_mode xmlns:modeler="http://activiti.com/modeler"><![CDATA[false]]></modeler:multilingual_mode>
+            <modeler:revoke_not_display xmlns:modeler="http://activiti.com/modeler"><![CDATA[false]]></modeler:revoke_not_display>
+            <modeler:tenant_id xmlns:modeler="http://activiti.com/modeler"><![CDATA[BPM]]></modeler:tenant_id>
+            <modeler:category_flag xmlns:modeler="http://activiti.com/modeler"><![CDATA[BPM]]></modeler:category_flag>
+            <modeler:global_performance_section xmlns:modeler="http://activiti.com/modeler"><![CDATA[special_working_calendar]]></modeler:global_performance_section>
+            <modeler:notify_settings xmlns:modeler="http://activiti.com/modeler" getOutDcFormContent="" allowDChatInteractiveAudit="false">
+                <modeler:notify_setting notifyType="1" notifyWays="1,2"/>
+                <modeler:notify_setting notifyType="2" notifyWays="1,2"/>
+                <modeler:notify_setting notifyType="35" notifyWays="1,2"/>
+                <modeler:notify_setting notifyType="6" notifyWays="1,2"/>
+                <modeler:notify_setting notifyType="7" notifyWays="1,2"/>
+                <modeler:notify_setting notifyType="14" notifyWays="1,2,5"/>
+                <modeler:notify_setting notifyType="8" notifyWays="1,2"/>
+                <modeler:notify_setting notifyType="18" notifyWays="1,2"/>
+                <modeler:notify_setting notifyType="9" notifyWays="1,2"/>
+                <modeler:notify_setting notifyType="10" notifyWays="1,2"/>
+                <modeler:notify_setting notifyType="11" notifyWays="1,2"/>
+                <modeler:notify_setting notifyType="3" notifyWays="1,2"/>
+                <modeler:notify_setting notifyType="4" notifyWays="1,2"/>
+                <modeler:notify_setting notifyType="5" notifyWays="1,2"/>
+                <modeler:notify_setting notifyType="16" notifyWays="1,2"/>
+                <modeler:notify_setting notifyType="17" notifyWays="1,2"/>
+            </modeler:notify_settings>
+        </extensionElements>
+        <startEvent id="startEvent1">
+            <extensionElements>
+                <modeler:allow_all_groups xmlns:modeler="http://activiti.com/modeler"><![CDATA[true]]></modeler:allow_all_groups>
+            </extensionElements>
+        </startEvent>
+        <userTask id="sid-0D277A47-E0C1-4844-8567-01174C7F7192" name="简单指派" activiti:candidateUsers="qinzhang,liuxiaopeng,${user}">
+            <extensionElements>
+                <modeler:skip_when_starter xmlns:modeler="http://activiti.com/modeler"><![CDATA[false]]></modeler:skip_when_starter>
+                <modeler:skip_when_same_assignee xmlns:modeler="http://activiti.com/modeler"><![CDATA[false]]></modeler:skip_when_same_assignee>
+                <modeler:skip_when_same_candidate xmlns:modeler="http://activiti.com/modeler"><![CDATA[false]]></modeler:skip_when_same_candidate>
+                <modeler:allow_involve xmlns:modeler="http://activiti.com/modeler"><![CDATA[false]]></modeler:allow_involve>
+                <modeler:allow_add_sign xmlns:modeler="http://activiti.com/modeler"><![CDATA[false]]></modeler:allow_add_sign>
+                <modeler:allow_transfer xmlns:modeler="http://activiti.com/modeler"><![CDATA[false]]></modeler:allow_transfer>
+                <modeler:is_approval_node xmlns:modeler="http://activiti.com/modeler"><![CDATA[false]]></modeler:is_approval_node>
+                <modeler:is_edit_node xmlns:modeler="http://activiti.com/modeler"><![CDATA[false]]></modeler:is_edit_node>
+                <modeler:task_performance_section xmlns:modeler="http://activiti.com/modeler"><![CDATA[special_working_calendar]]></modeler:task_performance_section>
+                <modeler:out_app_formrurl_desktop_open xmlns:modeler="http://activiti.com/modeler"><![CDATA[false]]></modeler:out_app_formrurl_desktop_open>
+                <modeler:notify_settings xmlns:modeler="http://activiti.com/modeler" getOutDcFormContent="" saveOutDcFormOperate="" allowDChatInteractiveAudit="false">
+                    <modeler:notify_setting notifyType="1" notifyWays="1,2,5"/>
+                    <modeler:notify_setting notifyType="2" notifyWays="1,2,5"/>
+                    <modeler:notify_setting notifyType="6" notifyWays="1,2,5"/>
+                    <modeler:notify_setting notifyType="7" notifyWays="1,2,5"/>
+                    <modeler:notify_setting notifyType="8" notifyWays="1,2,5"/>
+                    <modeler:notify_setting notifyType="18" notifyWays="1,2,5"/>
+                    <modeler:notify_setting notifyType="9" notifyWays="1,2,5"/>
+                    <modeler:notify_setting notifyType="10" notifyWays="1,2,5"/>
+                    <modeler:notify_setting notifyType="11" notifyWays="1,2,5"/>
+                </modeler:notify_settings>
+                <modeler:assignment xmlns:modeler="http://activiti.com/modeler">
+                    <modeler:more>
+                        <modeler:moreSelectType user="true" group="false"/>
+                        <modeler:candidateUsers/>
+                        <modeler:candidateUserExpressions>
+                            <modeler:candidateUserExpression><![CDATA[qinzhang]]></modeler:candidateUserExpression>
+                            <modeler:candidateUserExpression><![CDATA[liuxiaopeng]]></modeler:candidateUserExpression>
+                            <modeler:candidateUserExpression><![CDATA[${user}]]></modeler:candidateUserExpression>
+                        </modeler:candidateUserExpressions>
+                    </modeler:more>
+                    <modeler:type><![CDATA[more]]></modeler:type>
+                </modeler:assignment>
+            </extensionElements>
+        </userTask>
+        <sequenceFlow id="sid-E697F54C-59DF-4636-9DC6-C8A3F893985C" sourceRef="startEvent1" targetRef="sid-0D277A47-E0C1-4844-8567-01174C7F7192">
+            <extensionElements>
+                <modeler:cancelothersequenceflows xmlns:modeler="http://activiti.com/modeler"><![CDATA[false]]></modeler:cancelothersequenceflows>
+            </extensionElements>
+        </sequenceFlow>
+        <userTask id="Activity_17cr5qy" name="指派审批人">
+            <extensionElements>
+                <modeler:skip_when_starter xmlns:modeler="http://activiti.com/modeler"><![CDATA[false]]></modeler:skip_when_starter>
+                <modeler:skip_when_same_assignee xmlns:modeler="http://activiti.com/modeler"><![CDATA[false]]></modeler:skip_when_same_assignee>
+                <modeler:skip_when_same_candidate xmlns:modeler="http://activiti.com/modeler"><![CDATA[false]]></modeler:skip_when_same_candidate>
+                <modeler:allow_involve xmlns:modeler="http://activiti.com/modeler"><![CDATA[false]]></modeler:allow_involve>
+                <modeler:allow_add_sign xmlns:modeler="http://activiti.com/modeler"><![CDATA[false]]></modeler:allow_add_sign>
+                <modeler:allow_transfer xmlns:modeler="http://activiti.com/modeler"><![CDATA[false]]></modeler:allow_transfer>
+                <modeler:is_approval_node xmlns:modeler="http://activiti.com/modeler"><![CDATA[false]]></modeler:is_approval_node>
+                <modeler:is_edit_node xmlns:modeler="http://activiti.com/modeler"><![CDATA[false]]></modeler:is_edit_node>
+                <modeler:out_app_formrurl_desktop_open xmlns:modeler="http://activiti.com/modeler"><![CDATA[false]]></modeler:out_app_formrurl_desktop_open>
+                <modeler:warnings xmlns:modeler="http://activiti.com/modeler" useWarn="true"/>
+                <modeler:notify_settings xmlns:modeler="http://activiti.com/modeler" getOutDcFormContent="" saveOutDcFormOperate="" allowDChatInteractiveAudit="false">
+                    <modeler:notify_setting notifyType="1" notifyWays="1,2,5"/>
+                    <modeler:notify_setting notifyType="2" notifyWays="1,2,5"/>
+                    <modeler:notify_setting notifyType="6" notifyWays="1,2,5"/>
+                    <modeler:notify_setting notifyType="7" notifyWays="1,2,5"/>
+                    <modeler:notify_setting notifyType="8" notifyWays="1,2,5"/>
+                    <modeler:notify_setting notifyType="18" notifyWays="1,2,5"/>
+                    <modeler:notify_setting notifyType="9" notifyWays="1,2,5"/>
+                    <modeler:notify_setting notifyType="10" notifyWays="1,2,5"/>
+                    <modeler:notify_setting notifyType="11" notifyWays="1,2,5"/>
+                </modeler:notify_settings>
+            </extensionElements>
+        </userTask>
+        <sequenceFlow id="Flow_0dmpf8b" sourceRef="sid-0D277A47-E0C1-4844-8567-01174C7F7192" targetRef="Activity_17cr5qy">
+            <extensionElements>
+                <modeler:cancelothersequenceflows xmlns:modeler="http://activiti.com/modeler"><![CDATA[false]]></modeler:cancelothersequenceflows>
+            </extensionElements>
+        </sequenceFlow>
+        <userTask id="sid-512A3E04-D339-48DE-B091-49F3F526F767" name="test">
+            <extensionElements>
+                <modeler:skip_when_starter xmlns:modeler="http://activiti.com/modeler"><![CDATA[true]]></modeler:skip_when_starter>
+                <modeler:skip_when_same_assignee xmlns:modeler="http://activiti.com/modeler"><![CDATA[true]]></modeler:skip_when_same_assignee>
+                <modeler:skip_when_same_candidate xmlns:modeler="http://activiti.com/modeler"><![CDATA[true]]></modeler:skip_when_same_candidate>
+                <modeler:allow_involve xmlns:modeler="http://activiti.com/modeler"><![CDATA[true]]></modeler:allow_involve>
+                <modeler:allow_add_sign xmlns:modeler="http://activiti.com/modeler"><![CDATA[false]]></modeler:allow_add_sign>
+                <modeler:allow_transfer xmlns:modeler="http://activiti.com/modeler"><![CDATA[false]]></modeler:allow_transfer>
+                <modeler:is_approval_node xmlns:modeler="http://activiti.com/modeler"><![CDATA[false]]></modeler:is_approval_node>
+                <modeler:is_edit_node xmlns:modeler="http://activiti.com/modeler"><![CDATA[false]]></modeler:is_edit_node>
+                <modeler:inform_groups xmlns:modeler="http://activiti.com/modeler"><![CDATA[${123},]]></modeler:inform_groups>
+                <modeler:inform_candidates xmlns:modeler="http://activiti.com/modeler"><![CDATA[qinzhang,]]></modeler:inform_candidates>
+                <modeler:task_performance_section xmlns:modeler="http://activiti.com/modeler"><![CDATA[special_working_calendar]]></modeler:task_performance_section>
+                <modeler:out_app_formrurl_desktop_open xmlns:modeler="http://activiti.com/modeler"><![CDATA[false]]></modeler:out_app_formrurl_desktop_open>
+                <modeler:notify_settings xmlns:modeler="http://activiti.com/modeler" getOutDcFormContent="" saveOutDcFormOperate="" allowDChatInteractiveAudit="false">
+                    <modeler:notify_setting notifyType="1" notifyWays="1,2,5"/>
+                    <modeler:notify_setting notifyType="2" notifyWays="1,2,5"/>
+                    <modeler:notify_setting notifyType="6" notifyWays="1,2,5"/>
+                    <modeler:notify_setting notifyType="7" notifyWays="1,2,5"/>
+                    <modeler:notify_setting notifyType="8" notifyWays="1,2,5"/>
+                    <modeler:notify_setting notifyType="18" notifyWays="1,2,5"/>
+                    <modeler:notify_setting notifyType="9" notifyWays="1,2,5"/>
+                    <modeler:notify_setting notifyType="10" notifyWays="1,2,5"/>
+                    <modeler:notify_setting notifyType="11" notifyWays="1,2,5"/>
+                </modeler:notify_settings>
+            </extensionElements>
+        </userTask>
+        <sequenceFlow id="sid-02B76C8E-87CC-4BEB-B83D-F8AA01937ED1" sourceRef="Activity_17cr5qy" targetRef="sid-512A3E04-D339-48DE-B091-49F3F526F767">
+            <extensionElements>
+                <modeler:cancelothersequenceflows xmlns:modeler="http://activiti.com/modeler"><![CDATA[false]]></modeler:cancelothersequenceflows>
+            </extensionElements>
+        </sequenceFlow>
+        <endEvent id="sid-BC99AA74-757A-47FF-8099-30F0E00EE035">
+            <extensionElements>
+                <modeler:endnotice_initiator xmlns:modeler="http://activiti.com/modeler"><![CDATA[true]]></modeler:endnotice_initiator>
+            </extensionElements>
+        </endEvent>
+        <sequenceFlow id="sid-B928C087-B78E-4BF8-AF3A-633C927E209B" sourceRef="sid-512A3E04-D339-48DE-B091-49F3F526F767" targetRef="sid-BC99AA74-757A-47FF-8099-30F0E00EE035">
+            <extensionElements>
+                <modeler:cancelothersequenceflows xmlns:modeler="http://activiti.com/modeler"><![CDATA[false]]></modeler:cancelothersequenceflows>
+            </extensionElements>
+        </sequenceFlow>
+    </process>
+    <bpmndi:BPMNDiagram id="BPMNDiagram_new_zz_dev">
+        <bpmndi:BPMNPlane bpmnElement="new_zz_dev" id="BPMNPlane_new_zz_dev">
+            <bpmndi:BPMNShape bpmnElement="startEvent1" id="BPMNShape_startEvent1">
+                <omgdc:Bounds height="30.0" width="30.0" x="100.0" y="163.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="sid-0D277A47-E0C1-4844-8567-01174C7F7192" id="BPMNShape_sid-0D277A47-E0C1-4844-8567-01174C7F7192">
+                <omgdc:Bounds height="80.0" width="100.0" x="175.0" y="138.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="Activity_17cr5qy" id="BPMNShape_Activity_17cr5qy">
+                <omgdc:Bounds height="80.0" width="100.0" x="315.0" y="135.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="sid-512A3E04-D339-48DE-B091-49F3F526F767" id="BPMNShape_sid-512A3E04-D339-48DE-B091-49F3F526F767">
+                <omgdc:Bounds height="80.0" width="100.0" x="510.0" y="135.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNShape bpmnElement="sid-BC99AA74-757A-47FF-8099-30F0E00EE035" id="BPMNShape_sid-BC99AA74-757A-47FF-8099-30F0E00EE035">
+                <omgdc:Bounds height="28.0" width="28.0" x="655.0" y="161.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNEdge bpmnElement="Flow_0dmpf8b" id="BPMNEdge_Flow_0dmpf8b">
+                <omgdi:waypoint x="274.95000000000005" y="176.92857142857142"/>
+                <omgdi:waypoint x="314.99999999999847" y="176.07035714285715"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="sid-E697F54C-59DF-4636-9DC6-C8A3F893985C" id="BPMNEdge_sid-E697F54C-59DF-4636-9DC6-C8A3F893985C">
+                <omgdi:waypoint x="129.9499984899576" y="178.0"/>
+                <omgdi:waypoint x="174.9999999999917" y="178.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="sid-02B76C8E-87CC-4BEB-B83D-F8AA01937ED1" id="BPMNEdge_sid-02B76C8E-87CC-4BEB-B83D-F8AA01937ED1">
+                <omgdi:waypoint x="414.9499999999802" y="175.0"/>
+                <omgdi:waypoint x="510.0" y="175.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="sid-B928C087-B78E-4BF8-AF3A-633C927E209B" id="BPMNEdge_sid-B928C087-B78E-4BF8-AF3A-633C927E209B">
+                <omgdi:waypoint x="609.949999999996" y="175.0"/>
+                <omgdi:waypoint x="655.0" y="175.0"/>
+            </bpmndi:BPMNEdge>
+        </bpmndi:BPMNPlane>
+    </bpmndi:BPMNDiagram>
+</definitions>

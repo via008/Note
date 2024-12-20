@@ -1,0 +1,1186 @@
+{
+  "resourceId": "a81d91e3-b461-11ee-9370-8a326d46d58e",
+  "properties": {
+    "process_id": "new_zz_dev",
+    "name": "new_zz_dev",
+    "documentation": "",
+    "process_author": "",
+    "process_version": "",
+    "process_namespace": "http://www.activiti.org/processdef",
+    "executionlisteners": "{\"executionListeners\":[]}",
+    "eventlisteners": "{\"eventListeners\":[]}",
+    "signaldefinitions": "[]",
+    "messagedefinitions": "[]",
+    "executionvariables": "",
+    "metadata": "",
+    "allow_reminder": true,
+    "allow_recalls": [],
+    "allow_delete": true,
+    "allow_desktop_display": "false",
+    "category_flag": "BPM",
+    "not_allow_withdraws": [],
+    "business_bill_code_prefix": "",
+    "revoke_not_display": "false",
+    "global_performance": "",
+    "transfer_not_display": "false",
+    "multilingual_mode": "false",
+    "tenant_id": "BPM",
+    "global_performance_section": "special_working_calendar",
+    "notify_settings": null,
+    "messages": [],
+    "notifySetting": {
+      "allowDChatInteractiveAudit": "false",
+      "outDcFormApi": {
+        "apiId": "",
+        "apiName": "",
+        "apiUrl": ""
+      },
+      "notifyTypeSetting": [
+        {
+          "notifyName": "待办",
+          "notifyType": "1",
+          "notifyWays": "1,2",
+          "notyfyWaysArr": [
+            true,
+            true,
+            false,
+            false
+          ],
+          "customNotify": []
+        },
+        {
+          "notifyName": "催办",
+          "notifyType": "2",
+          "notifyWays": "1,2",
+          "notyfyWaysArr": [
+            true,
+            true,
+            false,
+            false
+          ],
+          "customNotify": []
+        },
+        {
+          "notifyName": "加急",
+          "notifyType": "35",
+          "notifyWays": "1,2",
+          "notyfyWaysArr": [
+            true,
+            true,
+            false,
+            false
+          ],
+          "customNotify": []
+        },
+        {
+          "notifyName": "收回",
+          "notifyType": "6",
+          "notifyWays": "1,2",
+          "notyfyWaysArr": [
+            true,
+            true,
+            false,
+            false
+          ],
+          "customNotify": []
+        },
+        {
+          "notifyName": "知会",
+          "notifyType": "7",
+          "notifyWays": "1,2",
+          "notyfyWaysArr": [
+            true,
+            true,
+            false,
+            false
+          ],
+          "customNotify": []
+        },
+        {
+          "notifyName": "仅评论",
+          "notifyType": "14",
+          "notifyWays": "1,2,5",
+          "notyfyWaysArr": [
+            true,
+            true,
+            false,
+            false
+          ],
+          "customNotify": []
+        },
+        {
+          "notifyName": "驳回至申请人",
+          "notifyType": "8",
+          "notifyWays": "1,2",
+          "notyfyWaysArr": [
+            true,
+            true,
+            false,
+            false
+          ],
+          "customNotify": []
+        },
+        {
+          "notifyName": "驳回至历史审批人",
+          "notifyType": "18",
+          "notifyWays": "1,2",
+          "notyfyWaysArr": [
+            true,
+            true,
+            false,
+            false
+          ],
+          "customNotify": []
+        },
+        {
+          "notifyName": "给Leader发预警",
+          "notifyType": "9",
+          "notifyWays": "1,2",
+          "notyfyWaysArr": [
+            true,
+            true,
+            false,
+            false
+          ],
+          "customNotify": []
+        },
+        {
+          "notifyName": "预警",
+          "notifyType": "10",
+          "notifyWays": "1,2",
+          "notyfyWaysArr": [
+            true,
+            true,
+            false,
+            false
+          ],
+          "customNotify": []
+        },
+        {
+          "notifyName": "移交",
+          "notifyType": "11",
+          "notifyWays": "1,2",
+          "notyfyWaysArr": [
+            true,
+            true,
+            false,
+            false
+          ],
+          "customNotify": []
+        },
+        {
+          "notifyName": "撤销",
+          "notifyType": "3",
+          "notifyWays": "1,2",
+          "notyfyWaysArr": [
+            true,
+            true,
+            false,
+            false
+          ],
+          "customNotify": []
+        },
+        {
+          "notifyName": "结束通知申请人",
+          "notifyType": "4",
+          "notifyWays": "1,2",
+          "notyfyWaysArr": [
+            true,
+            true,
+            false,
+            false
+          ],
+          "customNotify": []
+        },
+        {
+          "notifyName": "结束时通知他人",
+          "notifyType": "5",
+          "notifyWays": "1,2",
+          "notyfyWaysArr": [
+            true,
+            true,
+            false,
+            false
+          ],
+          "customNotify": []
+        },
+        {
+          "notifyName": "终止通知申请人",
+          "notifyType": "16",
+          "notifyWays": "1,2",
+          "notyfyWaysArr": [
+            true,
+            true,
+            false,
+            false
+          ],
+          "customNotify": []
+        },
+        {
+          "notifyName": "终止时通知他人",
+          "notifyType": "17",
+          "notifyWays": "1,2",
+          "notyfyWaysArr": [
+            true,
+            true,
+            false,
+            false
+          ],
+          "customNotify": []
+        }
+      ],
+      "outDcAuditApi": {
+        "apiId": "",
+        "apiName": "",
+        "apiUrl": ""
+      }
+    },
+    "set_variable": [],
+    "global_performance_type": ""
+  },
+  "stencil": {
+    "id": "BPMNDiagram"
+  },
+  "childShapes": [
+    {
+      "resourceId": "startEvent1",
+      "properties": {
+        "overrideid": "startEvent1",
+        "name": "",
+        "documentation": "",
+        "executionlisteners": {
+          "executionListeners": []
+        },
+        "initiator": "",
+        "formreference": "",
+        "out_pc_formurl": "",
+        "out_app_formrurl": "",
+        "fieldstovariables": "",
+        "formproperties": "",
+        "title": "",
+        "allow_all_groups": true,
+        "allow_startup_groups": [],
+        "warnings": [],
+        "allow_startup_assign_groups": [],
+        "usertasksenddchat": false
+      },
+      "stencil": {
+        "id": "StartNoneEvent"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "sid-E697F54C-59DF-4636-9DC6-C8A3F893985C"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 130,
+          "y": 193
+        },
+        "upperLeft": {
+          "x": 100,
+          "y": 163
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "sid-0D277A47-E0C1-4844-8567-01174C7F7192",
+      "properties": {
+        "overrideid": "sid-0D277A47-E0C1-4844-8567-01174C7F7192",
+        "name": "简单指派",
+        "documentation": "",
+        "asynchronousdefinition": false,
+        "exclusivedefinition": true,
+        "executionlisteners": {
+          "executionListeners": []
+        },
+        "multiinstance_type": "None",
+        "multiinstance_waitalluser": "false",
+        "multiinstance_completionconditiontype": "agree",
+        "multiinstance_completioncondition": "",
+        "isforcompensation": "false",
+        "usertaskassignment": {
+          "assignment": {
+            "type": "more",
+            "more": {
+              "candidateUsers": [],
+              "candidateUserExpressions": [
+                {
+                  "value": "qinzhang"
+                },
+                {
+                  "value": "liuxiaopeng"
+                },
+                {
+                  "value": "${user}"
+                }
+              ],
+              "moreSelectType": {
+                "user": true,
+                "group": false
+              }
+            }
+          }
+        },
+        "formreference": "",
+        "out_pc_formurl": "",
+        "out_app_formrurl": "",
+        "out_app_formrurl_desktop_open": false,
+        "fieldstovariables": "",
+        "duedatedefinition": "",
+        "prioritydefinition": "",
+        "categorydefinition": "",
+        "formproperties": "",
+        "tasklisteners": {
+          "taskListeners": []
+        },
+        "emailtemplate": "",
+        "skip_when_same_assignee": false,
+        "skip_when_same_candidate": false,
+        "skip_when_starter": false,
+        "allow_involve": false,
+        "allow_add_sign": false,
+        "is_approval_node": false,
+        "is_edit_node": false,
+        "business_state": "",
+        "inform_candidates": [],
+        "inform_groups": [],
+        "task_performance": "",
+        "warnings": [],
+        "allow_transfer": false,
+        "task_performance_section": "special_working_calendar",
+        "notifySetting": {
+          "allowDChatInteractiveAudit": "false",
+          "outDcFormApi": {
+            "apiId": "",
+            "apiName": "",
+            "apiUrl": ""
+          },
+          "outDcAuditApi": {
+            "apiId": "",
+            "apiName": "",
+            "apiUrl": ""
+          },
+          "notifyTypeSetting": [
+            {
+              "notifyName": "待办",
+              "notifyType": "1",
+              "notifyWays": "1,2,5",
+              "notyfyWaysArr": [
+                true,
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "notifyName": "催办",
+              "notifyType": "2",
+              "notifyWays": "1,2,5",
+              "notyfyWaysArr": [
+                true,
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "notifyName": "收回",
+              "notifyType": "6",
+              "notifyWays": "1,2,5",
+              "notyfyWaysArr": [
+                true,
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "notifyName": "知会",
+              "notifyType": "7",
+              "notifyWays": "1,2,5",
+              "notyfyWaysArr": [
+                true,
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "notifyName": "驳回至申请人",
+              "notifyType": "8",
+              "notifyWays": "1,2,5",
+              "notyfyWaysArr": [
+                true,
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "notifyName": "驳回至历史审批人",
+              "notifyType": "18",
+              "notifyWays": "1,2,5",
+              "notyfyWaysArr": [
+                true,
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "notifyName": "给Leader发预警",
+              "notifyType": "9",
+              "notifyWays": "1,2,5",
+              "notyfyWaysArr": [
+                true,
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "notifyName": "预警",
+              "notifyType": "10",
+              "notifyWays": "1,2,5",
+              "notyfyWaysArr": [
+                true,
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "notifyName": "移交",
+              "notifyType": "11",
+              "notifyWays": "1,2,5",
+              "notyfyWaysArr": [
+                true,
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "notifyName": "加急",
+              "notifyType": "35",
+              "notifyWays": "1,2,5",
+              "notyfyWaysArr": [
+                true,
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "notifyName": "仅评论",
+              "notifyType": "14",
+              "notifyWays": "1,2,5",
+              "notyfyWaysArr": [
+                true,
+                true,
+                false,
+                false
+              ]
+            }
+          ],
+          "useNodeNoticeSetting": "false"
+        },
+        "multiinstance_cardinality": "",
+        "multiinstance_collection": "${taskAssignmentBean.getSignUsers(execution)}",
+        "multiinstance_variable": "assignee",
+        "multiinstance_condition": "${signTaskComplete.isComplete(execution)}",
+        "usertasksenddchat": false,
+        "task_performance_type": ""
+      },
+      "stencil": {
+        "id": "UserTask"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "Flow_0dmpf8b"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 265,
+          "y": 215
+        },
+        "upperLeft": {
+          "x": 165,
+          "y": 135
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "sid-E697F54C-59DF-4636-9DC6-C8A3F893985C",
+      "properties": {
+        "overrideid": "sid-E697F54C-59DF-4636-9DC6-C8A3F893985C",
+        "name": "",
+        "documentation": "",
+        "conditionsequenceflow": {
+          "expression": {}
+        },
+        "executionlisteners": "",
+        "defaultflow": "false",
+        "cancelothersequenceflows": false,
+        "warnings": [],
+        "usertasksenddchat": false
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "sid-0D277A47-E0C1-4844-8567-01174C7F7192"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 164.78169969647763,
+          "y": 177.54813849089433
+        },
+        "upperLeft": {
+          "x": 130.06205030352237,
+          "y": 176.50654900910567
+        }
+      },
+      "dockers": [
+        {
+          "x": 15,
+          "y": 15
+        },
+        {
+          "x": 50,
+          "y": 40
+        }
+      ],
+      "target": {
+        "resourceId": "sid-0D277A47-E0C1-4844-8567-01174C7F7192"
+      }
+    },
+    {
+      "resourceId": "Activity_17cr5qy",
+      "properties": {
+        "overrideid": "Activity_17cr5qy",
+        "name": "指派审批人",
+        "documentation": "",
+        "asynchronousdefinition": false,
+        "exclusivedefinition": true,
+        "executionlisteners": {
+          "executionListeners": []
+        },
+        "multiinstance_type": "None",
+        "multiinstance_waitalluser": "false",
+        "multiinstance_completionconditiontype": "agree",
+        "multiinstance_completioncondition": "",
+        "isforcompensation": "false",
+        "usertaskassignment": "",
+        "formreference": "",
+        "out_pc_formurl": "",
+        "out_app_formrurl": "",
+        "out_app_formrurl_desktop_open": false,
+        "fieldstovariables": "",
+        "duedatedefinition": "",
+        "prioritydefinition": "",
+        "categorydefinition": "",
+        "formproperties": "",
+        "tasklisteners": {
+          "taskListeners": []
+        },
+        "emailtemplate": "",
+        "skip_when_same_assignee": false,
+        "skip_when_same_candidate": false,
+        "skip_when_starter": false,
+        "allow_involve": false,
+        "allow_add_sign": false,
+        "is_approval_node": false,
+        "is_edit_node": false,
+        "business_state": "",
+        "inform_candidates": [],
+        "inform_groups": [],
+        "task_performance": "",
+        "warnings": [
+          {
+            "useWarn": "true"
+          }
+        ],
+        "allow_transfer": false,
+        "notifySetting": {
+          "allowDChatInteractiveAudit": "false",
+          "outDcFormApi": {
+            "apiId": "",
+            "apiName": "",
+            "apiUrl": ""
+          },
+          "outDcAuditApi": {
+            "apiId": "",
+            "apiName": "",
+            "apiUrl": ""
+          },
+          "notifyTypeSetting": [
+            {
+              "notifyName": "待办",
+              "notifyType": "1",
+              "notifyWays": "1,2,5",
+              "notyfyWaysArr": [
+                true,
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "notifyName": "催办",
+              "notifyType": "2",
+              "notifyWays": "1,2,5",
+              "notyfyWaysArr": [
+                true,
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "notifyName": "收回",
+              "notifyType": "6",
+              "notifyWays": "1,2,5",
+              "notyfyWaysArr": [
+                true,
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "notifyName": "知会",
+              "notifyType": "7",
+              "notifyWays": "1,2,5",
+              "notyfyWaysArr": [
+                true,
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "notifyName": "驳回至申请人",
+              "notifyType": "8",
+              "notifyWays": "1,2,5",
+              "notyfyWaysArr": [
+                true,
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "notifyName": "驳回至历史审批人",
+              "notifyType": "18",
+              "notifyWays": "1,2,5",
+              "notyfyWaysArr": [
+                true,
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "notifyName": "给Leader发预警",
+              "notifyType": "9",
+              "notifyWays": "1,2,5",
+              "notyfyWaysArr": [
+                true,
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "notifyName": "预警",
+              "notifyType": "10",
+              "notifyWays": "1,2,5",
+              "notyfyWaysArr": [
+                true,
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "notifyName": "移交",
+              "notifyType": "11",
+              "notifyWays": "1,2,5",
+              "notyfyWaysArr": [
+                true,
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "notifyName": "加急",
+              "notifyType": "35",
+              "notifyWays": "1,2,5",
+              "notyfyWaysArr": [
+                true,
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "notifyName": "仅评论",
+              "notifyType": "14",
+              "notifyWays": "1,2,5",
+              "notyfyWaysArr": [
+                true,
+                true,
+                false,
+                false
+              ]
+            }
+          ],
+          "useNodeNoticeSetting": "false"
+        },
+        "multiinstance_cardinality": "",
+        "multiinstance_collection": "${taskAssignmentBean.getSignUsers(execution)}",
+        "multiinstance_variable": "assignee",
+        "multiinstance_condition": "${signTaskComplete.isComplete(execution)}",
+        "usertasksenddchat": false,
+        "task_performance_type": "",
+        "task_performance_section": "special_working_calendar"
+      },
+      "stencil": {
+        "id": "UserTask"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "sid-02B76C8E-87CC-4BEB-B83D-F8AA01937ED1"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 415,
+          "y": 215
+        },
+        "upperLeft": {
+          "x": 315,
+          "y": 135
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "Flow_0dmpf8b",
+      "properties": {
+        "overrideid": "Flow_0dmpf8b",
+        "name": "",
+        "documentation": "",
+        "conditionsequenceflow": {
+          "expression": {}
+        },
+        "executionlisteners": "",
+        "defaultflow": "false",
+        "cancelothersequenceflows": false,
+        "warnings": [],
+        "usertasksenddchat": false
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "Activity_17cr5qy"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 314.78125,
+          "y": 175
+        },
+        "upperLeft": {
+          "x": 265.21875,
+          "y": 175
+        }
+      },
+      "dockers": [
+        {
+          "x": 50,
+          "y": 40
+        },
+        {
+          "x": 50,
+          "y": 40
+        }
+      ],
+      "target": {
+        "resourceId": "Activity_17cr5qy"
+      }
+    },
+    {
+      "resourceId": "sid-512A3E04-D339-48DE-B091-49F3F526F767",
+      "properties": {
+        "overrideid": "sid-512A3E04-D339-48DE-B091-49F3F526F767",
+        "name": "test",
+        "documentation": "",
+        "asynchronousdefinition": false,
+        "exclusivedefinition": true,
+        "executionlisteners": {
+          "executionListeners": []
+        },
+        "multiinstance_type": "None",
+        "multiinstance_waitalluser": "false",
+        "multiinstance_completionconditiontype": "agree",
+        "multiinstance_completioncondition": "",
+        "isforcompensation": "false",
+        "usertaskassignment": "",
+        "formreference": "",
+        "out_pc_formurl": "",
+        "out_app_formrurl": "",
+        "out_app_formrurl_desktop_open": false,
+        "fieldstovariables": "",
+        "duedatedefinition": "",
+        "prioritydefinition": "",
+        "categorydefinition": "",
+        "formproperties": "",
+        "tasklisteners": {
+          "taskListeners": []
+        },
+        "emailtemplate": "",
+        "skip_when_same_assignee": true,
+        "skip_when_same_candidate": true,
+        "skip_when_starter": true,
+        "allow_involve": true,
+        "allow_add_sign": false,
+        "is_approval_node": false,
+        "is_edit_node": false,
+        "business_state": "",
+        "inform_candidates": [
+          "qinzhang"
+        ],
+        "inform_groups": [
+          "${123}"
+        ],
+        "task_performance": "",
+        "warnings": [],
+        "allow_transfer": false,
+        "task_performance_section": "special_working_calendar",
+        "notifySetting": {
+          "allowDChatInteractiveAudit": "false",
+          "outDcFormApi": {
+            "apiId": "",
+            "apiName": "",
+            "apiUrl": ""
+          },
+          "outDcAuditApi": {
+            "apiId": "",
+            "apiName": "",
+            "apiUrl": ""
+          },
+          "notifyTypeSetting": [
+            {
+              "notifyName": "待办",
+              "notifyType": "1",
+              "notifyWays": "1,2,5",
+              "notyfyWaysArr": [
+                true,
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "notifyName": "催办",
+              "notifyType": "2",
+              "notifyWays": "1,2,5",
+              "notyfyWaysArr": [
+                true,
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "notifyName": "收回",
+              "notifyType": "6",
+              "notifyWays": "1,2,5",
+              "notyfyWaysArr": [
+                true,
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "notifyName": "知会",
+              "notifyType": "7",
+              "notifyWays": "1,2,5",
+              "notyfyWaysArr": [
+                true,
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "notifyName": "驳回至申请人",
+              "notifyType": "8",
+              "notifyWays": "1,2,5",
+              "notyfyWaysArr": [
+                true,
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "notifyName": "驳回至历史审批人",
+              "notifyType": "18",
+              "notifyWays": "1,2,5",
+              "notyfyWaysArr": [
+                true,
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "notifyName": "给Leader发预警",
+              "notifyType": "9",
+              "notifyWays": "1,2,5",
+              "notyfyWaysArr": [
+                true,
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "notifyName": "预警",
+              "notifyType": "10",
+              "notifyWays": "1,2,5",
+              "notyfyWaysArr": [
+                true,
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "notifyName": "移交",
+              "notifyType": "11",
+              "notifyWays": "1,2,5",
+              "notyfyWaysArr": [
+                true,
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "notifyName": "加急",
+              "notifyType": "35",
+              "notifyWays": "1,2,5",
+              "notyfyWaysArr": [
+                true,
+                true,
+                false,
+                false
+              ]
+            },
+            {
+              "notifyName": "仅评论",
+              "notifyType": "14",
+              "notifyWays": "1,2,5",
+              "notyfyWaysArr": [
+                true,
+                true,
+                false,
+                false
+              ]
+            }
+          ],
+          "useNodeNoticeSetting": "false"
+        },
+        "multiinstance_cardinality": "",
+        "multiinstance_collection": "${taskAssignmentBean.getSignUsers(execution)}",
+        "multiinstance_variable": "assignee",
+        "multiinstance_condition": "${signTaskComplete.isComplete(execution)}",
+        "usertasksenddchat": false,
+        "task_performance_type": ""
+      },
+      "stencil": {
+        "id": "UserTask"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "sid-B928C087-B78E-4BF8-AF3A-633C927E209B"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 610,
+          "y": 215
+        },
+        "upperLeft": {
+          "x": 510,
+          "y": 135
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "sid-02B76C8E-87CC-4BEB-B83D-F8AA01937ED1",
+      "properties": {
+        "overrideid": "sid-02B76C8E-87CC-4BEB-B83D-F8AA01937ED1",
+        "name": "",
+        "documentation": "",
+        "conditionsequenceflow": {
+          "expression": {}
+        },
+        "executionlisteners": "",
+        "defaultflow": "false",
+        "cancelothersequenceflows": false,
+        "warnings": [],
+        "usertasksenddchat": false
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "sid-512A3E04-D339-48DE-B091-49F3F526F767"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 509.48828125,
+          "y": 175
+        },
+        "upperLeft": {
+          "x": 415.51171875,
+          "y": 175
+        }
+      },
+      "dockers": [
+        {
+          "x": 50,
+          "y": 40
+        },
+        {
+          "x": 50,
+          "y": 40
+        }
+      ],
+      "target": {
+        "resourceId": "sid-512A3E04-D339-48DE-B091-49F3F526F767"
+      }
+    },
+    {
+      "resourceId": "sid-BC99AA74-757A-47FF-8099-30F0E00EE035",
+      "properties": {
+        "overrideid": "sid-BC99AA74-757A-47FF-8099-30F0E00EE035",
+        "name": "",
+        "documentation": "",
+        "executionlisteners": {
+          "executionListeners": []
+        },
+        "endnotice_initiator": true,
+        "endnotice_participant": "",
+        "endnotice_steady": "",
+        "business_state": "",
+        "warnings": [],
+        "usertasksenddchat": false
+      },
+      "stencil": {
+        "id": "EndNoneEvent"
+      },
+      "childShapes": [],
+      "outgoing": [],
+      "bounds": {
+        "lowerRight": {
+          "x": 683,
+          "y": 189
+        },
+        "upperLeft": {
+          "x": 655,
+          "y": 161
+        }
+      },
+      "dockers": []
+    },
+    {
+      "resourceId": "sid-B928C087-B78E-4BF8-AF3A-633C927E209B",
+      "properties": {
+        "overrideid": "sid-B928C087-B78E-4BF8-AF3A-633C927E209B",
+        "name": "",
+        "documentation": "",
+        "conditionsequenceflow": {
+          "expression": {}
+        },
+        "executionlisteners": "",
+        "defaultflow": "false",
+        "cancelothersequenceflows": false,
+        "warnings": [],
+        "usertasksenddchat": false
+      },
+      "stencil": {
+        "id": "SequenceFlow"
+      },
+      "childShapes": [],
+      "outgoing": [
+        {
+          "resourceId": "sid-BC99AA74-757A-47FF-8099-30F0E00EE035"
+        }
+      ],
+      "bounds": {
+        "lowerRight": {
+          "x": 654.375,
+          "y": 175
+        },
+        "upperLeft": {
+          "x": 610.390625,
+          "y": 175
+        }
+      },
+      "dockers": [
+        {
+          "x": 50,
+          "y": 40
+        },
+        {
+          "x": 14,
+          "y": 14
+        }
+      ],
+      "target": {
+        "resourceId": "sid-BC99AA74-757A-47FF-8099-30F0E00EE035"
+      }
+    }
+  ],
+  "bounds": {
+    "lowerRight": {
+      "x": 1800,
+      "y": 1050
+    },
+    "upperLeft": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  "stencilset": {
+    "url": "stencilsets/bpmn2.0/bpmn2.0.json",
+    "namespace": "http://b3mn.org/stencilset/bpmn2.0#"
+  },
+  "ssextensions": []
+}
