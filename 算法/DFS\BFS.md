@@ -9,6 +9,20 @@
 - `shift`：从数组删除**第一个**元素，并返回该元素的值。该方法更改数组的长度
 - `unshift`：将一个或多个元素添加到数组的**开头**，并返回该数组的**新长度**
 
+- `push`
+- `pop`
+
+```javascript
+const dfs = (root) => {
+  if (!root) {
+    return;
+  }
+
+  dfs(root.left);
+  dfs(root.right);
+};
+```
+
 ### BFS
 
 广度优先搜索(breadth first search)，从根节点开始，沿树的**宽度**进行搜索，如果所有的节点都被访问，则算法终止。
