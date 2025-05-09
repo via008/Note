@@ -4,27 +4,18 @@
  * @return {number}
  */
 var minSubArrayLen = function(target, nums) {
-    // 双指针
-    let left = 0,
-        right = 0;
-    
-    // 窗口和
+    let min = Number.MAX_VALUE;
+    let start = 0;
     let sum = 0;
 
-    // 结果
-    let min = Number.MAX_VALUE;
+    for(let i = 0; i < nums.length; i ++) {
+        sum += nums[i];
 
-    while(right < nums.length) {
-        sum += nums[right];
-
-        while(sum >= target) {
-            min = Math.min(min, right - left + 1);
-            sum -= nums[left];
-            left ++;
+        if (sum >= target) {
+            min = Math.min(min, i - start + 1);
+            start ++;
         }
-
-        right ++;
     }
 
-    return min === Number.MAX_VALUE ? 0 : min;
+    return min;
 };
