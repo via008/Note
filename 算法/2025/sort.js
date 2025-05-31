@@ -31,6 +31,7 @@ function insertionSort(arr) {
 
         while(j >= 0 && cur > arr[j]) {
             arr[j + 1] = arr[j];
+            j --;
         }
 
         arr[j + 1] = cur;
