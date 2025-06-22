@@ -1,3 +1,46 @@
+/**
+ * - 状态：startTime，current
+ * - 方法：start，stop
+ * - performance.now / Date.now
+ * - requestAnimationFrame / setInterval
+ */
+
+// 组件
+function TimerComponent() {
+    const [startTime, setStartTime] = useState(null);
+    const [current, setCurrent] = useState(null);
+    const ref = useRef(null);
+  
+    const update = () => {
+      ref.current = requestAnimationFrame(() => {
+        setCurrent(Date.now());
+        update();
+      });
+    };
+  
+    const handleStart = () => {
+      setStartTime(Date.now());
+      update();
+    };
+  
+    const handlePause = () => {
+      cancelAnimationFrame(ref.current);
+    };
+  
+    let showTime = 0;
+    if (startTime !== null && current !== null) {
+      showTime = (current - startTime) / 1000;
+    }
+  
+    return <div>
+      <div>{showTime.toFixed(0)}</div>
+      <Button onClick={handleStart}>开始</Button>
+      <Button onClick={handlePause}>暂停</Button>
+    </div>;
+  }
+
+
+// 类
 class Timer {
     constructor() {
         this.running = false;
