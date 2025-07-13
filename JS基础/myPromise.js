@@ -1,3 +1,15 @@
+/**
+ * Promise 静态方法
+ * - all 返回所有被兑现的值，任何一个被拒绝则被拒绝
+ * - allSettled 返回所有已敲定的值
+ * - any 返回第一个兑现的值，如果都拒绝，返回包含拒绝原因的数组
+ * - race 返回第一个敲定的值
+ * - reject 返回一个已拒绝的 Promise
+ * - resolve 以给定值解决一个 Promise
+ * - try 接受一个任意类型的回调函数，并将其结果封装成一个 Promise
+ * - withResolver 返回一个对象，包含一个新的 Promise 对象和两个函数，用于解决或者拒绝他
+ */
+
 class MyPromise {
     constructor(executor) {
         this.value = '';
